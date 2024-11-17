@@ -57,7 +57,7 @@
                 return $this->view->response("Error al insertar el cliente",500);
             }
 
-            $clienteAgregado = $cliente = $this->model->getClienteByID($id);
+            $clienteAgregado = $this->model->getClienteByID($id);
             return $this->view->response($clienteAgregado, 201);           
         }
 
